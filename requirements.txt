@@ -1,0 +1,8 @@
+torch
+torchvision
+numpy
+einops
+ptflops
+pyyaml
+opencv-python
+albumentations

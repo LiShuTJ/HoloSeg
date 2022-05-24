@@ -1,0 +1,44 @@
+SETTINGS:
+    APEX: true
+    GPUS: 4
+    WORKERS: 4
+    OUTPUT_DIR: 'output'
+    PRINT_FREQ: 100
+    VAL_FREQ: 100
+    
+MODEL:
+    NAME: holoseg
+    NUM_CLASSES: 19
+    PRETRAINED: 'weights/imagenet_pretrained.pth'
+
+DATASET:
+    NAME: cityscapes
+    ROOT_DIR: 'data/cityscapes'
+    TRAIN_SET: 'data/list/cityscapes/train.txt'
+    TEST_SET: 'data/list/cityscapes/val.txt'
+    
+TRAIN:
+    IMAGE_SIZE:
+        - 512
+        - 1024
+    CROP_SIZE:
+        - 512
+        - 1024
+    RESUME: true
+    BATCH_SIZE: 12
+    EPOCHS: 500
+    LR: 0.01
+    WD: 0.0005
+    SYNC_BN: true
+    DATA_AUG:
+        MULTISCALE: 
+            - 0.75
+            - 1.5
+        FLIP: true
+
+TEST:
+    IMAGE_SIZE:
+        - 512
+        - 1024
+    BATCH_SIZE: 8
+    
