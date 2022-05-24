@@ -1,8 +1,7 @@
 # HoloSeg
 > This is the  official implementation of "HoloSeg: An Efficient Holographic Segmentation Network for Real-time Scene Parsing" (PyTorch) (ICRA 2022)
 
-<img src="./figures/example0.png" width=400 height=200 />
-<img src="./figures/example1.png" width=400 height=200 />
+<img src="./figures/example0.png" width=400 height=200 /><img src="./figures/example1.png" width=400 height=200 />
 
 
 ## Under Construction
